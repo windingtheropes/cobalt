@@ -19,5 +19,9 @@ const blog_dir = (() => {
 if(enable_blog) {
     
 }
+else {
+    console.log(`🟣 [blog router]: blog router is disabled`);
+}
+
 
 export default router;

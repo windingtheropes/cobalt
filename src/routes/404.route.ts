@@ -20,6 +20,10 @@ if(enable_404) {
     router.get('*', (req: Request, res: Response) => {
         return res.sendFile(path_404)
     })
+    console.log(`🔵 [404 router]: added 404 route from ${path_404}`);
+}
+else {
+    console.log(`🟣 [404 router]: 404 router is disabled`);
 }
 
 export default router;
